@@ -1,3 +1,5 @@
+using System;
+
 namespace TowerDefense
 {
 	class Game
@@ -14,7 +16,14 @@ namespace TowerDefense
 			//map.Width = 8;
 			//map.Height = 5;
 
-			int area = map.Width * map.Height;
+			//int area = map.Width * map.Height;
+			Point x = new MapLocation(4,2);
+			
+			Point p = x;
+			
+			map.OnMap(new MapLocation(0,0));
+
+
 		}
 	}
 }

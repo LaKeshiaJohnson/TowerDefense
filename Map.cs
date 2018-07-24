@@ -14,9 +14,10 @@ namespace TowerDefense
 
 		public bool OnMap(Point point)
 		{
-			bool inBounds = point.x >= 0 && point.x < width && point.y >=0 && point.y < height;
+			return point.X >= 0 && point.X < Width && 
+				 point.Y >=0 && point.Y < Height;
 			
-			return inBounds;
+			
 		}
 	}
 }
